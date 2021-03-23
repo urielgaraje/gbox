@@ -35,16 +35,10 @@ let swReg = null;
 
 const boxes = [];
 
-const url = window.location.href;
-let swLocation = '/gbox/sw.js';
-
 if (navigator.serviceWorker) {
-    if (url.includes('localhost')) {
-        swLocation = '/sw.js';
-    }
 
     window.addEventListener('load', function () {
-        navigator.serviceWorker.register(swLocation).then((register) => {
+        navigator.serviceWorker.register('/sw.js').then((register) => {
             swReg = register;
             swReg.pushManager.getSubscription().then(checkSubsciption);
         });
@@ -338,3 +332,4 @@ window.addEventListener('online', isOnline);
 window.addEventListener('offline', isOnline);
 
 getBoxes();
+SERVER_URL
