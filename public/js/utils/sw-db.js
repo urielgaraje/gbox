@@ -1,5 +1,5 @@
-const PROD = true;
-const SERVER_URL = PROD ? 'https://frozen-mesa-12659.herokuapp.com' : 'http://localhost:3000';
+
+const SERVER_URL = window.location.origin;
 const API_URL = `${SERVER_URL}/api/v1`;
 
 const db = new PouchDB('boxes');
