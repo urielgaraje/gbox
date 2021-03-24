@@ -1,5 +1,5 @@
 
-const SERVER_URL = window.location.origin;
+const SERVER_URL = location.origin;
 const API_URL = `${SERVER_URL}/api/v1`;
 
 const db = new PouchDB('boxes');

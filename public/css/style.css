@@ -146,7 +146,7 @@ h1 {
     box-shadow: 0 2px 6px 0 #666;
     transition: all 0.1s ease-in-out;
 
-    font-size: 16px;
+    font-size: 2.2rem;
     color: white;
     text-align: center;
     line-height: 70px;
@@ -243,9 +243,9 @@ span.g-nav__title {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #ecf0f1;
+    background-color: #fff;
     z-index: 999;
-    padding: 58px 0 0;
+    padding: 58px 1rem 1rem;
     overflow-y: scroll;
 }
 
@@ -298,7 +298,7 @@ nav.g-modal__nav > button {
 
 .g-box {
     background-color: #231e39;
-    border-radius: 25px;
+    border-radius: 4px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.35);
     color: #fff;
     padding: 2rem 0;
@@ -328,11 +328,35 @@ nav.g-modal__nav > button {
 }
 
 .g-box__body .g-map-container iframe {
-    border-radius: 25px;
+    border-radius: 4px;
 }
 
 .g-form {
-    padding: 0 4rem;
+    padding: 0;
+}
+
+.g-form input {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-family: 'Lato';
+    font-size: 1.6rem;
+}
+
+.g-form textarea {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    font-family: 'Lato';
+    font-size: 1.6rem;
+}
+
+.g-form input,
+.g-form textarea {
+    outline: none;
+    border:none;
 }
 
 .g-form input {
@@ -358,27 +382,8 @@ nav.g-modal__nav > button {
     border-bottom-color: var(--dark);
 }
 
-.g-form input {
-    width: 100%;
-    padding: 1rem;
-    margin: 1rem 0;
-    font-family: 'Lato';
-    font-size: 1.6rem;
-}
-
-.g-form textarea {
-    width: 100%;
-    border: none;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 10px;
-    font-family: 'Lato';
-    font-size: 1.6rem;
-}
-
-.g-form input,
-.g-form textarea {
-    outline: none;
+.g-camera-container{
+    position:relative;
 }
 
 button#g-btn-take-photo {
@@ -387,15 +392,19 @@ button#g-btn-take-photo {
     background-color: var(--primary);
     color: #fff;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 4px;
     font-size: 1.6rem;
+    position:absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .g-map-container {
     margin: 1rem 0;
 }
 .g-map-container iframe {
-    border-radius: 25px;
+    border-radius: 4px;
 }
 
 header {

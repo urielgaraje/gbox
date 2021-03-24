@@ -153,9 +153,9 @@ self.addEventListener('push', (event) => {
         body: data.body,
         icon: 'img/icons/favicon-196.png',
         badge: 'img/g-box.png',
-        image: 'https://assets.browserlondon.com/app/uploads/2019/03/pwa-banner-768x432.png',
+        image: 'https://user-images.githubusercontent.com/3104648/28351989-7f68389e-6c4b-11e7-9bf2-e9fcd4977e7a.png',
         data: {
-            url: `${PROD ? '/gbox' : '/'}?utm_tag=homescreen`,
+            url: '/?utm_tag=homescreen',
             discount: true
         },
         actions: [
